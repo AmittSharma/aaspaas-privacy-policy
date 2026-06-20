@@ -1,19 +1,60 @@
-Privacy Policy for Aaspaas Grocery List
+# AasPaas Privacy Policy
 
-Aaspaas Grocery List is a local grocery list app. The app allows users to create, save, duplicate, export, and share grocery lists.
+Last updated: 20 June 2026
 
-Information stored by the app:
-- User name
-- Mobile number
-- Grocery lists
-- Item quantities
-- Optional item notes or brand preferences
+AasPaas helps users create grocery orders and share them with a shopkeeper through a secure order link.
 
-This information is stored locally on the user’s device. We do not operate a backend server for this version of the app, and we do not collect, sell, or share user data with our own servers.
+## Information We Collect
 
-Users may choose to export a grocery list as a PDF and share it using apps installed on their device, such as WhatsApp, email, or other sharing apps. This sharing action is controlled by the user.
+We collect the following information when you use the app:
 
-The app does not include ads, analytics, payments, account login, or online ordering.
+- Name, entered by you during profile setup.
+- Mobile number, verified through Firebase Phone Authentication.
+- Grocery order details, including item names, quantities, units, notes, custom items, and order status.
+- Shopkeeper mobile number, entered manually or selected from contacts when you choose to send an order.
+- Device push notification token, used only to send order status notifications.
+- Basic crash diagnostics through Firebase Crashlytics.
 
-If you have privacy questions, contact us at:
-aaspaas.support@gmail.com
+## Contacts Permission
+
+The app requests contact access only when you tap the option to pick a shopkeeper from your contacts.
+
+Contacts are not uploaded as an address book. The selected phone number is used only to prepare the order share flow.
+
+## How We Use Information
+
+We use collected information to:
+
+- Sign you in securely.
+- Sync your profile and grocery orders.
+- Generate and display shopkeeper order links.
+- Show order status, bill details, unavailable items, and shopkeeper notes.
+- Send push notifications when a shopkeeper updates order status.
+- Diagnose crashes and improve reliability.
+
+## Data Sharing
+
+Order links are intended to be shared with the shopkeeper you choose. Anyone with the public order link can view that order page, so share links carefully.
+
+We do not sell personal data.
+
+We use Firebase services for authentication, push notifications, and crash reporting.
+
+## Data Retention
+
+Order data is kept so users can view previous orders and shopkeeper status history. Users may delete local orders from the app, but shared order records may remain on the backend for order history and operational integrity.
+
+## Security
+
+Authenticated app APIs require Firebase ID tokens. Public shopkeeper order pages use long random tokens and basic rate limiting.
+
+No payment information is collected by AasPaas in the current version.
+
+## Contact
+
+For privacy questions, contact:
+
+```text
+Techitt
+Email: support@aaspaas.app
+```
